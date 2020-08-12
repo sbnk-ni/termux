@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+ <head>
+	 <title>Secret Message</title>
+	 <meta name = "viewport"content= "width=device-width,initial-scale=1">
+	 <script type="text/javascript">
+    var attempt=3
+    function validate(){
+    var user=document.getElementById("get").value;
+    var pass=document.getElementById("get1").value;
+    if (user=="nisha")
+       {
+        alert("Login Successfull");
+       }
+       else
+       {
+           alert("Invalid Username Or Password");
+       }
+    }
+    </script>
+	 <style>html{
+	 height=100%;
+	 margin=0; background-image:url(https://i.ibb.co/mDF8FM6/images.jpg) ;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -0-background-size: cover;
+	  background-size: cover;
+	 }
+	 </style>
+	 <style type= "text/css">
+	 #formBox{
+    width:270px;
+    height:370px;
+    background-color:#ffffff;
+    margin-left:8%;
+    margin-top:10%;
+    border:5px double  #f3f3f3;
+    border-radius:2%;
+    position:relative ;
+}
+form{
+    margin-top:15%;
+}
+form input{
+    padding:5px;
+}
+#get{
+    border:2px solid #303030;
+    border-radius:49px;
+    box-shadow:1px 1px 10px 1px #ffffff;
+    margin-bottom:25px;
+    outline:none ;
+    margin-left:100px;
+}
+#get1{
+    border:2px solid #303030;
+    border-radius:49px;
+    box-shadow:1px 1px 10px 1px #ffffff;
+    margin-bottom:25px;
+    outline:none ;
+    margin-left:100px;
+}
+#butt{
+    margin-top:20px;
+    width:70%;
+    margin-left:55px;
+    padding:4px;
+    font-weight:bold ;
+    border-radius:5px;
+    background-color:#ffffff;
+    box-shadow:1px 1px 1px 1px #f3f3f3;
+}
+	</style>
+ </head>
+	 <body>
+	 <form>
+	<input type="text" name="user" id="get" placeholder="UserName" required/><br/>
+               <input type="password" name="pass" id="get1" placeholder="Password" required/><br/>
+   <input type="submit" value="Login" id="butt" onClick="validate()"/>
+   </form>
+    
+	 </body>
+ </html>
